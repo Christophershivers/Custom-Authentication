@@ -1,0 +1,70 @@
+﻿@model SignupModel
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+
+<div class="container-sm d-flex  justify-content-center my-5">
+    <form method="post" enctype="multipart/form-data" >
+        <div class="row gy-2">
+            <div class="col-md-6">
+                <div class="form-outline">
+                    <input type="text" id="form1" class="form-control" asp-for="@Model.FirstName"/>
+                    <label class="form-label" asp-for="@Model.FirstName">First Name</label>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-outline">
+                    <input type="text" id="form2" class="form-control" asp-for="@Model.LastName"/>
+                    <label class="form-label" asp-for="@Model.LastName">Last Name</label>
+                </div>
+            </div>
+            <div class="col-md-12 p-3">
+                <label asp-for="@Model.ProfileImageUpload" class="form-label" for="customFile">Change Profile Picture</label>
+                <input asp-for="@Model.ProfileImageUpload" type="file" class="form-control" id="customFile" />
+            </div>
+
+            <div class="col-md-12 d-flex justify-content-end">
+                <button type="submit" class="btn btn-primary">Update</button>
+            </div>
+
+            <div class="col-md-6" style="display: none;">
+                <div class="form-outline">
+                    <input  type="text" id="form3" class="form-control" asp-for="@Model.ID"/>
+                    <label class="form-label" asp-for="@Model.ID" style="display: none;">Last Name</label>
+                </div>
+            </div>
+
+            <div class="col-md-6" style="display: none;">
+                <div class="form-outline">
+                    <input  type="text" id="form4" class="form-control" asp-for="@Model.UserName" />
+                    <label  class="form-label" asp-for="@Model.UserName">Last Name</label>
+                </div>
+            </div>
+
+            <div class="col-md-6" style="display: none;">
+                <div class="form-outline">
+                    <input type="text" id="form5" class="form-control" asp-for="@Model.Email" />
+                    <label class="form-label" asp-for="@Model.Email" >Last Name</label>
+                </div>
+            </div>
+
+            <div class="col-md-6" style="display: none;">
+                <div class="form-outline">
+                    <input type="text" id="form6" class="form-control" asp-for="@Model.Password" />
+                    <label class="form-label" asp-for="@Model.Password" >Last Name</label>
+                </div>
+            </div>
+
+            <div class="col-md-6" style="display: none;">
+                <div class="form-outline">
+                    <input type="text" id="form7" class="form-control" asp-for="@Model.ProfileImage"/>
+                    <label class="form-label" asp-for="@Model.ProfileImage">Last Name</label>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

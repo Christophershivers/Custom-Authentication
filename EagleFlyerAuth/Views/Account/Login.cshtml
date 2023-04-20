@@ -1,0 +1,37 @@
+﻿@model LoginModel
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+<div class="container vh-100 d-flex align-items-center justify-content-center">
+            <form action="Login" method="post">
+                <div class="row gy-2 ">
+                <div class="text-center my-2" >
+                    <img height="150" src="~/eagle-flyer-low-resolution-logo-color-on-transparent-background.png" class="" alt="" />
+                  </div>
+                <div class="col-md-12">
+                    <div class="form-outline">
+                        <input type="text" id="form12" class="form-control" asp-for="Email"/>
+                        <label class="form-label" for="form12">Email</label>
+                      </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-outline">
+                        <input type="password" id="form13" class="form-control" asp-for="Password"/>
+                        <label class="form-label" for="form13">password</label>
+                      </div>
+                      <div class="d-flex justify-content-end py-1">
+                        <button type="submit" class="btn btn-primary">Login</button>
+                      </div>
+                      
+                </div>
+                
+                
+            </div>
+            </form>
+            
+            
+        </div>
